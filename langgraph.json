@@ -6,9 +6,9 @@
     "langchain-community>=0.0.20"
   ],
   "graphs": {
-    "zest_mbti_workflow": "./src/zest_mbti_workflow.py:graph",
-    "zest_companion_workflow": "./src/zest_companion_workflow.py:graph",
-    "zest_companion_modular": "./src/zest_companion_workflow_modular.py:graph"
+    "zest_mbti_workflow": "./app/zest_mbti_workflow.py:graph",
+    "zest_companion_workflow": "./app/zest_companion_workflow.py:graph",
+    "zest_companion_modular": "./app/zest_companion_workflow_modular.py:graph"
   },
   "env": ".env",
   "streaming": {

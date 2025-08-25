@@ -14,29 +14,29 @@ from langgraph.graph import StateGraph, END
 # ============================================================================
 
 # Types et configuration
-from src.modules.common.types import WorkflowState
+from app.modules.common.types import WorkflowState
 
 # Fonctions d'analyse
-from src.modules.mbti.mbti_analysis import mbti_expert_analysis
-from src.modules.lencioni.lencioni_analysis import (
+from app.modules.mbti.mbti_analysis import mbti_expert_analysis
+from app.modules.lencioni.lencioni_analysis import (
     lencioni_intent_analysis, 
     lencioni_analysis, 
     lencioni_vector_search
 )
-from src.modules.leadership.leadership_analysis import (
+from app.modules.leadership.leadership_analysis import (
     leadership_intent_analysis,
     # leadership_analysis,  # REMOVED - bypassed for direct Goleman approach
     leadership_vector_search
 )
-from src.modules.pcm.pcm_analysis import (
+from app.modules.pcm.pcm_analysis import (
     pcm_intent_analysis,
     pcm_vector_search,
     update_explored_dimensions
 )
-from src.modules.general.general_analysis import general_vector_search
+from app.modules.general.general_analysis import general_vector_search
 
 # Fonctions d'outils et profil
-from src.modules.tools.vector_tools import (
+from app.modules.tools.vector_tools import (
     fetch_user_profile,
     fetch_temperament_description,
     analyze_temperament_facets,
@@ -49,7 +49,7 @@ from src.modules.tools.vector_tools import (
 )
 
 # Génération de réponse
-from src.modules.response.response_generator import generate_final_response
+from app.modules.response.response_generator import generate_final_response
 
 # ============================================================================
 # FONCTIONS DE ROUTAGE SIMPLES

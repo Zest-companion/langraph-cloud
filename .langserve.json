@@ -1,0 +1,6 @@
+{
+  "name": "zest-companion",
+  "description": "Zest Companion - AI coaching assistant with MBTI, PCM, and Lencioni models",
+  "python_version": "3.11",
+  "port": 8000
+}

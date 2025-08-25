@@ -1,0 +1,17 @@
+{
+  "dependencies": [
+    ".",
+    "langchain>=0.1.0",
+    "langchain-core>=0.1.0", 
+    "langchain-community>=0.0.20"
+  ],
+  "graphs": {
+    "zest_mbti_workflow": "./src/zest_mbti_workflow.py:graph",
+    "zest_companion_workflow": "./src/zest_companion_workflow.py:graph",
+    "zest_companion_modular": "./src/zest_companion_workflow_modular.py:graph"
+  },
+  "env": ".env",
+  "streaming": {
+    "mode": "events"
+  }
+}

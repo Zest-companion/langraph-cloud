@@ -17,7 +17,7 @@ from langgraph.graph import StateGraph, END
 from .modules.common.types import WorkflowState
 
 # Fonctions d'analyse
-from modules.mbti.mbti_analysis import mbti_expert_analysis
+from .modules.mbti.mbti_analysis import mbti_expert_analysis
 from .modules.lencioni.lencioni_analysis import (
     lencioni_intent_analysis, 
     lencioni_analysis, 

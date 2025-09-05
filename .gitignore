@@ -53,3 +53,29 @@ logs/
 
 # Dependencies
 node_modules/
+
+# Ne pas push pour la mise en production du backend
+documents_local/
+api/
+public
+src/
+dev-server.js
+eslint.config.js
+index.html
+library-mockup-example.tsx
+library-mockup-simple.tsx
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.js
+tsconfig.json
+tsconfig.node.json
+tsconfig.app.json
+tsconfig.spec.json
+tsconfig.base.json
+tsconfig.json
+tsconfig.app.json
+LICENSE
+vercel.json
+vite.config.ts
+/langraph-studio/

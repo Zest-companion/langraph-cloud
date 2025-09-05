@@ -1,7 +1,7 @@
 """
 Utilitaires de logging pour les workflows
 """
-from app.modules.common.config import log_to_supabase
+from .config import log_to_supabase
 import time
 from functools import wraps
 

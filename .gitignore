@@ -58,7 +58,7 @@ node_modules/
 documents_local/
 api/
 public
-src/
+/src/
 dev-server.js
 eslint.config.js
 index.html

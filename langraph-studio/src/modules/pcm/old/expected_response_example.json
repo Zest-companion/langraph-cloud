@@ -1,0 +1,38 @@
+{
+  "scenario": "User already in PHASE exploring stress, mentions colleague",
+  "user_message": "Yes, but I think it is because of my colleague who is very demanding",
+  "expected_chain_of_thought_analysis": {
+    "current_context": "phase",
+    "confidence": 0.85,
+    "dimensions_covered": [],
+    "context_change": false,
+    "transition_readiness": {
+      "to_phase": false,
+      "to_action_plan": false,
+      "reasoning": "User is still exploring PHASE but mentions colleague"
+    },
+    "suggested_next_steps": [
+      "Continue exploring personal stress patterns in PHASE",
+      "TRANSITION vers COWORKER pour comprendre la dynamique relationnelle avec le collègue"
+    ],
+    "reasoning": "L'utilisateur explore son stress (PHASE) mais mentionne 'colleague' comme cause → suggérer transition COWORKER"
+  },
+  "expected_transition_suggestions": {
+    "primary_suggestion": {
+      "action": "suggest_coworker_transition",
+      "message": "It seems like the stress you're experiencing might be related to workplace relationships. Would you like to explore how to better understand and work with your colleague? This could help you develop strategies for both managing your own stress and improving the working relationship.",
+      "context_switch": "coworker_focused"
+    },
+    "alternative_suggestions": [
+      {
+        "action": "continue_phase_exploration",
+        "message": "Or would you prefer to continue exploring your personal stress patterns first?",
+        "context_switch": null
+      }
+    ]
+  },
+  "expected_prompt_behavior": {
+    "current_response": "Stay in PHASE context for this response but include transition suggestion",
+    "next_interaction": "If user accepts, switch to COWORKER flow for next response"
+  }
+}

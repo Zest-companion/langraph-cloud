@@ -25,9 +25,9 @@
     "huggingface-hub>=0.16.0"
   ],
   "graphs": {
-    "zest_mbti_workflow": "./app/zest_mbti_workflow.py:graph",
-    "zest_companion_workflow": "./app/zest_companion_workflow.py:graph",
-    "zest_companion_modular": "./app/zest_companion_workflow_modular.py:graph"
+    "zest_mbti_workflow": "./zest_mbti_workflow.py:graph",
+    "zest_companion_workflow": "./zest_companion_workflow.py:graph",
+    "zest_companion_modular": "./zest_companion_workflow_modular.py:graph"
   },
   "env": ".env",
   "streaming": {

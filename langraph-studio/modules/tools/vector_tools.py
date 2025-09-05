@@ -8,6 +8,7 @@ from ..common.types import WorkflowState
 from ..common.config import supabase
 from ..lencioni.lencioni_analysis import perform_supabase_vector_search, sanitize_vector_results
 from ..common.llm_utils import normalize_name_for_metadata
+from ..common.cache import profile_cache, vector_cache
 
 logger = logging.getLogger(__name__)
 

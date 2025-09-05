@@ -1,0 +1,13 @@
+# LangChain pour Chain of Thought reasoning contextuel PCM
+langchain>=0.1.0
+langchain-core>=0.1.0
+# Guardrails pour sécurité et validation
+guardrails-ai>=0.6.0
+
+# 🔒 PACKAGES SPÉCIALISÉS SÉCURITÉ (optionnels - décommenter selon besoin)
+# Pour contenu illégal/dangereux avancé:
+# llm-guard>=0.3.0              # Détection jailbreak, injection prompts, toxicité
+# ai-safety-guardrails>=1.0.0   # Toxicité, PII, spam, fact-checking  
+# nemoguardrails>=0.7.0         # Contrôle conversationnel NVIDIA
+# transformers>=4.30.0          # HuggingFace pour classification topics
+# sentence-transformers>=2.2.0  # Embeddings sémantiques avancés

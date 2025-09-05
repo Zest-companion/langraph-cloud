@@ -78,4 +78,5 @@ tsconfig.app.json
 LICENSE
 vercel.json
 vite.config.ts
-/langraph-studio/
+/backend/
+/langraph-studio/.langgraph_api/

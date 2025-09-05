@@ -79,4 +79,4 @@ LICENSE
 vercel.json
 vite.config.ts
 /backend/
-/langraph-studio/.langgraph_api/
+/langraph_studio/.langgraph_api/

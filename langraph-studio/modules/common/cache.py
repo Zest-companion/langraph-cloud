@@ -9,6 +9,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 class SimpleCache:
     """Cache en mémoire simple avec expiration"""
     

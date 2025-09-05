@@ -18,7 +18,7 @@
     "requests>=2.31.0"
     ],
   "graphs": {
-    "zest_companion_modular": "./langraph-studio/src/zest_companion_workflow_modular.py:graph"
+    "zest_companion_modular": "./langraph-studio/app/zest_companion_workflow_modular.py:graph"
   },
   "env": ".env",
   "streaming": {

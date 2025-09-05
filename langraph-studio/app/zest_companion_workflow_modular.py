@@ -14,26 +14,26 @@ from langgraph.graph import StateGraph, END
 # ============================================================================
 
 # Types et configuration
-from src.modules.common.types import WorkflowState
+from app.modules.common.types import WorkflowState
 
 # Fonctions d'analyse
-from src.modules.mbti.mbti_analysis import mbti_expert_analysis
-from src.modules.lencioni.lencioni_analysis import (
+from app.modules.mbti.mbti_analysis import mbti_expert_analysis
+from app.modules.lencioni.lencioni_analysis import (
     lencioni_intent_analysis, 
     lencioni_analysis, 
     lencioni_vector_search
 )
-from src.modules.leadership.leadership_analysis import (
+from app.modules.leadership.leadership_analysis import (
     leadership_intent_analysis,
     # leadership_analysis,  # REMOVED - bypassed for direct Goleman approach
     leadership_vector_search
 )
 # Version intégrée avec le nouveau flow manager
-from src.modules.pcm.pcm_analysis_v2 import (
+from app.modules.pcm.pcm_analysis_v2 import (
     pcm_analysis_with_flow_manager as pcm_analysis_node,  # Nouveau système PCM unifié
     pcm_vector_search_with_flow_manager as pcm_vector_search
 )
-from src.modules.pcm.pcm_vector_search import (
+from app.modules.pcm.pcm_vector_search import (
     pcm_intent_analysis as pcm_intent_analysis_legacy,  # Legacy pour fallback
     update_explored_dimensions
 )
@@ -43,10 +43,10 @@ def pcm_intent_analysis(state: WorkflowState) -> WorkflowState:
     """Entry point pour PCM intent analysis - utilise le nouveau système unifié"""
     # Utiliser directement pcm_analysis_with_flow_manager qui gère tout
     return pcm_analysis_node(state)
-from src.modules.general.general_analysis import general_vector_search
+from app.modules.general.general_analysis import general_vector_search
 
 # Fonctions d'outils et profil
-from src.modules.tools.vector_tools import (
+from app.modules.tools.vector_tools import (
     fetch_user_profile,
     fetch_temperament_description,
     analyze_temperament_facets,
@@ -58,7 +58,7 @@ from src.modules.tools.vector_tools import (
     no_tools
 )
 # Import des outils PCM
-from src.modules.tools.pcm_tools import (
+from app.modules.tools.pcm_tools import (
     pcm_tools_router,
     execute_pcm_self_tool,
     execute_pcm_action_plan_tool,
@@ -70,7 +70,7 @@ from src.modules.tools.pcm_tools import (
 )
 
 # Génération de réponse
-from src.modules.response.response_generator import generate_final_response
+from app.modules.response.response_generator import generate_final_response
 
 # ============================================================================
 # FONCTIONS DE ROUTAGE SIMPLES
